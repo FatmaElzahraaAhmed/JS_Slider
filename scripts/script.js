@@ -60,12 +60,13 @@ function autoSlide() {
     active = (active + 1) % items.length;
     loadShow();
     updateButtonStyles();
+    slideTimeout = setTimeout(autoSlide, 5000);
 }
 
 let slideInterval = setInterval(autoSlide, 5000);
 
 function stopAutoSlide() {
-    clearInterval(slideInterval);
+    clearTimeout(slideTimeout);
 }
 
 let next = document.getElementById('next');
