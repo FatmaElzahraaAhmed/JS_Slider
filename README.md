@@ -4,13 +4,11 @@ This project is a JavaScript-based image slider designed for showcasing a series
 
 ## Project Overview
 
-### GitHub Pages
-
 View the live demo on GitHub Pages: [JS Image Slider Demo](https://fatmaelzahraaahmed.github.io/JS_Slider/)
 
 ![JS Image Slider Preview](assets/images/demo-preview.png)
 
-### Project Structure
+## Project Structure
 
 - **index.html:** The main HTML file containing the structure of the image slider.
 - **styles/style.css:** The CSS file responsible for styling the image slider.
@@ -26,4 +24,6 @@ To integrate the image slider into your project, follow these steps:
 3. Customize the slider by adding or removing images in the "assets/images/" directory.
 4. Adjust styling in the "styles/style.css" file to match your project's design.
 
+## Automatic Sliding
 
+The image slider now features an automatic sliding effect. It will transition to the next image every 5 seconds. The automatic sliding can be paused when the user interacts with the slider by clicking the next/prev buttons or slider buttons.

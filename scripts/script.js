@@ -54,8 +54,19 @@ function updateButtonStyles() {
         button.style.fontSize = "40px";
     });
 }
-
 loadShow();
+
+function autoSlide() {
+    active = (active + 1) % items.length;
+    loadShow();
+    updateButtonStyles();
+}
+
+let slideInterval = setInterval(autoSlide, 5000);
+
+function stopAutoSlide() {
+    clearInterval(slideInterval);
+}
 
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
@@ -64,10 +75,12 @@ next.onclick = function () {
     active = (active + 1) % items.length;
     loadShow();
     updateButtonStyles();
+    stopAutoSlide();
 };
 
 prev.onclick = function () {
     active = (active - 1 + items.length) % items.length;
     loadShow();
     updateButtonStyles();
+    stopAutoSlide();
 };
