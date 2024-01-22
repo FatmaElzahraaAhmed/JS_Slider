@@ -6,6 +6,9 @@ This project is a JavaScript-based image slider designed for showcasing a series
 
 View the live demo on GitHub Pages: [JS Image Slider Demo](https://fatmaelzahraaahmed.github.io/JS_Slider/)
 
+**Note: The automatic sliding feature may not work as expected on the GitHub Pages website due to certain restrictions. For the best experience, consider running the project locally.**
+
+
 ![JS Image Slider Preview](assets/images/demo-preview.png)
 
 ## Project Structure
